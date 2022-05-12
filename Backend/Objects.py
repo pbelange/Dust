@@ -52,6 +52,7 @@ class shape:
         loadShape[self.type]()
 
     def sphere(self):
-        self.r = self.shapeConfig['radius']
-        self.area = np.pi*(self.r)**2
-        self.volume = 4*np.pi*(self.r)**3/3
+        self.r       = self.shapeConfig['radius']
+        self.cross   = np.pi*(self.r)**2
+        self.area    = 4*np.pi*(self.r)**2
+        self.volume  = 4*np.pi*(self.r)**3/3
